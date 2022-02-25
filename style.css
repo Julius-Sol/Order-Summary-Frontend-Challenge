@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+html,
+body,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Deafult styles provided for footer*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*=====================
+      Typogrophy
+=======================*/
+
+body {
+  background: url(/images/pattern-background-mobile.svg);
+  font-family: "Red Hat Display", sans-serif;
+  background-color: hsl(225, 100%, 94%);
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+  text-align: center;
+}
+
+.title {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+
+.plan-title {
+  font-size: 0.8rem;
+}
+
+.plan-subtext {
+  font-size: 0.8rem;
+  text-align: center;
+  color: hsl(224, 23%, 55%);
+}
+
+.procced {
+  font-weight: 700;
+}
+
+.cancel {
+  font-weight: 700;
+  color: hsl(224, 23%, 55%);
+}
+
+.plan-change {
+  color: hsl(245, 75%, 52%);
+  text-align: center;
+}
+
+/*=====================
+      Layout
+=======================*/
+
+button:hover,
+a:hover {
+  cursor: pointer;
+}
+
+.container-image {
+  margin: 4em auto 0 auto;
+  width: 90%;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  padding-top: 2em;
+  background-color: white;
+  border-radius: 0 0 15px 15px;
+}
+
+.order-summary-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+/*  header  */
+
+img {
+  display: block;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+/* Summary */
+
+.order-summary-text {
+  margin: 1em auto 1em auto;
+  line-height: 1.6em;
+}
+
+.plan-details {
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+.plan-title-container {
+  width: 100%;
+  text-align: center;
+}
+
+.plan-image {
+  width: 5em;
+  padding: 1em;
+  display: block;
+}
+
+.plan-change {
+  width: 100%;
+}
+
+/* Checkout button */
+
+.procced {
+  margin-top: 2em;
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 94%);
+  width: 100%;
+  padding: 1em 0;
+  border-radius: 10px;
+  border: none;
+}
+
+/* Cancel button */
+
+.cancel {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  background: none;
+  border: none;
+}
+
+footer {
+  position: fixed;
+  margin-top: 1em;
+  padding: 10px 10px 0px 10px;
+  bottom: 0;
+  width: 100%;
+  /* Height of the footer*/
+  height: 30px;
+  background: grey;
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    background: url(/images/pattern-background-desktop.svg) no-repeat;
+    background-color: hsl(225, 100%, 94%);
+  }
+  .container-image {
+    max-width: 60%;
+  }
+
+  .container {
+    max-width: 60%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    background: url(/images/pattern-background-desktop.svg) no-repeat;
+    background-color: hsl(225, 100%, 94%);
+  }
+  .container-image {
+    max-width: 40%;
+  }
+
+  .container {
+    max-width: 40%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  body {
+    background: url(/images/pattern-background-desktop.svg) repeat-x;
+    background-color: hsl(225, 100%, 94%);
+  }
+  .container-image {
+    max-width: 25%;
+  }
+
+  .container {
+    max-width: 25%;
+  }
+}
